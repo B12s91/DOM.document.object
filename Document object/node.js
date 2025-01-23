@@ -3,6 +3,5 @@ console.log(`Estou em ${pais}`)
 if ( pais == 'brasil'){
   console.log('brasileiro')
 } else {
-
-  console.log('estrangeiro')
+ console.log('estrangeiro')
 }
