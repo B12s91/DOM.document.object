@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade</title>
+    <script>
+        function verificarPais() {
+            var pais = 'africa';
+            var resultado = `Nascido em 
+            ${pais}\n`;
+
+            if (pais === 'brasil') {
+                resultado += 'brasileiro';
+            } else {
+                resultado += 'estrangeiro';
+            }
+
+            // Exibir o resultado na página
+            document.getElementById('resultado').textContent = resultado;
+        }
+    </script>
+</head>
+<body onload="verificarPais()">
+    <h1>Verificação de Nacionalidade</h1>
+    <pre id="resultado"></pre>
+</body>
+</html>
